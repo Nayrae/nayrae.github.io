@@ -21,9 +21,6 @@ And here's the checksec output from `GDB` plus
 ![[Pasted image 20251215224930.png]]
 ![[Pasted image 20251215233217.png]]
 
-And here's the checksec output from `GDB`
-![[files/Pasted image 20251215224930.png]]
-![[files/Pasted image 20251215233217.png]]
 ## findings
 - the file is a `64-bit`  `ELF` , `dynamically linked` and `not stripped`
 - the `main()` function calls `vuln()`, `gg()` is never called
