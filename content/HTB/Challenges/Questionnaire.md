@@ -5,4 +5,10 @@ This challenge is extremely easy, our job will be analyzing a downloaded `.c` fi
 
 # Analyzing
 
-![[Pasted image 20251215210630.png(out)]]
+Let's start by reading the `test.c`
+![[Pasted image 20251215210630.png]]
+## findings
+
+- the `main()` function calls `vuln()`, `gg()` is never called
+- `vuln()` uses `fgets`, a vulnerable command that doesn't limit input based on buffer size
+- 
