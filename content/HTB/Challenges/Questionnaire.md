@@ -7,7 +7,7 @@ This challenge is extremely easy, our job will be analyzing a downloaded `.c` fi
 # Analyzing
 
 Let's start by reading the `test.c`
-![[files/Pasted image 20251215210630.png]]
+![[Pasted image 20251215210630.png]]
 ## findings
 
 - the `main()` function calls `vuln()`, `gg()` is never called
