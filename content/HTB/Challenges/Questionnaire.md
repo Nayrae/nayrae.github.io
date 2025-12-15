@@ -16,8 +16,10 @@ Let's read the `test.c`
 
 Let's start by reading the `test.c`
 ![[files/Pasted image 20251215210630.png]]
-## findings
 
+And here's the checksec output from `GDB` plus 
+![[Pasted image 20251215224930.png]]
+![[Pasted image 20251215233217.png]]
 And here's the checksec output from `GDB`
 ![[files/Pasted image 20251215224930.png]]
 ![[files/Pasted image 20251215233217.png]]
