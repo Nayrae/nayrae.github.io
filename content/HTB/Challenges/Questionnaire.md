@@ -11,5 +11,6 @@ Let's start by reading the `test.c`
 ## findings
 
 - the `main()` function calls `vuln()`, `gg()` is never called
-- `vuln()` uses `fgets`, a vulnerable command that doesn't limit input based on buffer size
-- 
+- `vuln()` uses `fgets`, which reads a total of $0x100 == 256_{10}$ characters
+-  the buffer's size is $[0x20]$ which equals to $32_{10}$
+  
