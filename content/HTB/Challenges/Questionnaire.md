@@ -2,6 +2,7 @@
 {"publish":true,"created":"2025-12-15T19:56:33.349+01:00","modified":"2025-12-15T19:59:52.345+01:00","tags":["HTB","PWN"],"cssclasses":""}
 ---
 
+
 This challenge is extremely easy, our job will be analyzing a downloaded `.c` file and it's binary, and answer correctly to the questions in asked once connected to the target via nc.
 
 ---
@@ -9,8 +10,14 @@ This challenge is extremely easy, our job will be analyzing a downloaded `.c` fi
 Let's start by seeing what are we going to work with:
 ![[Pasted image 20251215230440.png]]
 
+<<<<<<< HEAD
 Let's read the `test.c`
 ![[Pasted image 20251215210630.png]]
+=======
+Let's start by reading the `test.c`
+![[files/Pasted image 20251215210630.png]]
+## findings
+>>>>>>> origin/v4
 
 And here's the checksec output from `GDB`
 ![[Pasted image 20251215224930.png]]
@@ -19,6 +26,7 @@ And here's the checksec output from `GDB`
 - the file is a `64-bit`  `ELF` , `dynamically linked` and `not stripped`
 - the `main()` function calls `vuln()`, `gg()` is never called
 - `vuln()` uses `fgets`, which reads a total of $0x100 == 256_{10}$ characters
+<<<<<<< HEAD
 -  the `char buffer` fills $[0x20]$ bytes (which equals to $32_{10}$ `bytes`) with `0`s
 	- `char` takes `8 bits` of space, this means that if we input more than 32 chars we're going to get an overflow
 	- `fget`
@@ -41,3 +49,7 @@ Let's test it with the binary:
 Let's spawn the machine and connect to it using `nc`, we will get a tutorial of how to analyze the files followed by the questions
 ![[Pasted image 20251215230912.png]]![[Pasted image 20251215231158.png]]
 ![[Pasted image 20251215233109.png]]
+=======
+-  the buffer's size is $[0x20]$ which equals to $32_{10}$
+  
+>>>>>>> origin/v4
