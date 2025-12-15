@@ -10,14 +10,12 @@ This challenge is extremely easy, our job will be analyzing a downloaded `.c` fi
 Let's start by seeing what are we going to work with:
 ![[Pasted image 20251215230440.png]]
 
-<<<<<<< HEAD
 Let's read the `test.c`
 ![[Pasted image 20251215210630.png]]
-=======
+
 Let's start by reading the `test.c`
 ![[files/Pasted image 20251215210630.png]]
 ## findings
->>>>>>> origin/v4
 
 And here's the checksec output from `GDB`
 ![[Pasted image 20251215224930.png]]
