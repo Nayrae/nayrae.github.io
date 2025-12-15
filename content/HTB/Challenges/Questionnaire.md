@@ -24,10 +24,8 @@ And here's the checksec output from `GDB`
 - the file is a `64-bit`  `ELF` , `dynamically linked` and `not stripped`
 - the `main()` function calls `vuln()`, `gg()` is never called
 - `vuln()` uses `fgets`, which reads a total of $0x100 == 256_{10}$ characters
-<<<<<<< HEAD
 -  the `char buffer` fills $[0x20]$ bytes (which equals to $32_{10}$ `bytes`) with `0`s
 	- `char` takes `8 bits` of space, this means that if we input more than 32 chars we're going to get an overflow
-	- `fget`
 - since `Canary` and `Fortify` are disabled, there is no protection against buffer overflows
 	- `PIE`, if enabled, it allows the executable file to be loaded at different memory addresses each time it executes, fortifying the program against buffer overflows 
 ---
@@ -47,7 +45,7 @@ Let's test it with the binary:
 Let's spawn the machine and connect to it using `nc`, we will get a tutorial of how to analyze the files followed by the questions
 ![[Pasted image 20251215230912.png]]![[Pasted image 20251215231158.png]]
 ![[Pasted image 20251215233109.png]]
-=======
--  the buffer's size is $[0x20]$ which equals to $32_{10}$
+
+
   
->>>>>>> origin/v4
+
