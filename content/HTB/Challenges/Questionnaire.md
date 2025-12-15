@@ -14,6 +14,7 @@ Let's read the `test.c`
 
 And here's the checksec output from `GDB`
 ![[Pasted image 20251215224930.png]]
+![[Pasted image 20251215233217.png]]
 ## findings
 - the file is a `64-bit`  `ELF` , `dynamically linked` and `not stripped`
 - the `main()` function calls `vuln()`, `gg()` is never called
@@ -39,3 +40,4 @@ Let's test it with the binary:
 
 Let's spawn the machine and connect to it using `nc`, we will get a tutorial of how to analyze the files followed by the questions
 ![[Pasted image 20251215230912.png]]![[Pasted image 20251215231158.png]]
+![[Pasted image 20251215233109.png]]
