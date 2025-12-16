@@ -4,7 +4,7 @@
 
 
 
-This challenge is extremely easy, our job will be analyzing a downloaded `.c` file and it's binary, and answer correctly to the questions in asked once connected to the target via nc.
+This challenge is extremely easy, our job will be analyzing a downloaded `.c` file and it's binary, and answer correctly to the questions asked once connected to the target via nc.
 
 ---
 # Analyzing
