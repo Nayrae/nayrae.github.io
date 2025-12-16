@@ -4,6 +4,7 @@
 
 
 
+
 This challenge is extremely easy, our job will be analyzing a downloaded `.c` file and it's binary, and answer correctly to the questions asked once connected to the target via nc.
 
 ---
@@ -18,8 +19,8 @@ Let's start by reading the `test.c`
 ![[files/Pasted image 20251215210630.png]]
 
 And here's the checksec output from `GDB` plus 
-![[Pasted image 20251215224930.png]]
-![[Pasted image 20251215233217.png]]
+![[files/Pasted image 20251215224930.png]]
+![[files/Pasted image 20251215233217.png]]
 
 ## findings
 - the file is a `64-bit`  `ELF` , `dynamically linked` and `not stripped`
