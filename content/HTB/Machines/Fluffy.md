@@ -2,18 +2,20 @@
 {"publish":true,"created":"2025-12-16T15:14:02.227+01:00","modified":"2025-12-16T15:15:10.028+01:00","tags":["HTB","Windows","Easy"],"cssclasses":""}
 ---
 
+
 # Reconnaissance
 
 We're give the credentials `j.fleischman / J0elTHEM4n1990!`, however the first step is a nmap scan to see what services are enabled, and maybe we're able to find some other useful information
-![[Pasted image 20251216152400.png]]
+![[files/Pasted image 20251216152400.png]]
 We're able to obtain lots of interesting informations: 
 - kerberos, ldap, smb (port 445), ldaps
 - the the FQDN is `dc01.fluffy.htb`
 	- and that's what we have to add to our `/etc/hosts` file, after `fluffy.htb`
 
 If we enumerate smb shares with the account we received, we can see that our account has `read-write` access to the `IT` share,  we download the files, they all seem interesting
-![[Pasted image 20251216181254.png]]
+![[files/Pasted image 20251216181254.png]]
 In fact `Upgrade_Notice.pdf` reveals to be a Notice made for the IT Department, which tells the administrators all the vulnerabilities found in the system
+<<<<<<< HEAD
 ![[Pasted image 20251216181728.png]]After searching we find `CVE-2025-24071` to be the right one, with this exploit we first create a zip file which, when opened by the victim, will send to the attacker ip running `responder` the `NTLM hash` of the user
 ![[Pasted image 20251216203438.png]]![[Pasted image 20251216230843.png]]
 ```
@@ -31,3 +33,6 @@ In fact `Upgrade_Notice.pdf` reveals to be a Notice made for the IT Department, 
 [SMB] NTLMv2-SSP Username : FLUFFY\p.agila
 [SMB] NTLMv2-SSP Hash     : p.agila::FLUFFY:dbe2674fd3b6de5b:FF82E5B5595C88BE065C88E424EE1C78:010100000000000000A6F7149C6EDC0123FCFC700ECAAA4F00000000020008005A0050005A00500001001E00570049004E002D004E0032005800330034004200550035004F003800500004003400570049004E002D004E0032005800330034004200550035004F00380050002E005A0050005A0050002E004C004F00430041004C00030014005A0050005A0050002E004C004F00430041004C00050014005A0050005A0050002E004C004F00430041004C000700080000A6F7149C6EDC0106000400020000000800300030000000000000000100000000200000797145D163C972913A6E15EA6135DBEA13DCB07E670CEFF576008C9643E773A90A001000000000000000000000000000000000000900200063006900660073002F00310030002E00310030002E00310034002E00310037000000000000000000
 ```
+=======
+![[files/Pasted image 20251216181728.png]]After searching we find `CVE-2025-24071` to be the right one, with this exploit we first create a zip file which, when opened by the victim, will send to the attacker ip running `responder` the `NTLM hash` of the user
+![[files/Pasted image 20251216203438.png]]
