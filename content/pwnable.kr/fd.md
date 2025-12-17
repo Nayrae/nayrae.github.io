@@ -60,6 +60,7 @@ Let's analyze the code in parts
 2. `fd` must equal to `0`
 3. since `fd` =  `argv[1] - 0x1234` we have to make sure `argv[1] = 0x1234`
 4. $0x1234_{16} = 4660_{10}$ 
+5. since `fd` = `0`, we will be asked to input raw-text, we will type `LETMEWIN` to get to the flag
 
 # Solution
 
