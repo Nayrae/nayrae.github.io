@@ -3,6 +3,7 @@
 ---
 
 
+
 # Reconnaissance
 
 We're give the credentials `j.fleischman / J0elTHEM4n1990!`, however the first step is a nmap scan to see what services are enabled, and maybe we're able to find some other useful information
@@ -15,8 +16,8 @@ We're able to obtain lots of interesting informations:
 If we enumerate smb shares with the account we received, we can see that our account has `read-write` access to the `IT` share,  we download the files, they all seem interesting
 ![[files/Pasted image 20251216181254.png]]
 In fact `Upgrade_Notice.pdf` reveals to be a Notice made for the IT Department, which tells the administrators all the vulnerabilities found in the system
-![[Pasted image 20251216181728.png]]After searching we find `CVE-2025-24071` to be the right one, with this exploit we first create a zip file which, when opened by the victim, will send to the attacker ip running `responder` the `NTLM hash` of the user
-![[Pasted image 20251216203438.png]]![[Pasted image 20251216230843.png]]
+![[files/Pasted image 20251216181728.png]]After searching we find `CVE-2025-24071` to be the right one, with this exploit we first create a zip file which, when opened by the victim, will send to the attacker ip running `responder` the `NTLM hash` of the user
+![[files/Pasted image 20251216203438.png]]![[files/Pasted image 20251216230843.png]]
 ```
 [*] Version: Responder 3.1.7.0
 [*] Author: Laurent Gaffie, <lgaffie@secorizon.com>
