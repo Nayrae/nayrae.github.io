@@ -2,7 +2,6 @@
 {"publish":true,"created":"2025-12-17T10:27:32.786+01:00","modified":"2025-12-17T10:44:51.620+01:00","tags":["CTF","PWN","Easy","C","Linux-I/O"],"cssclasses":""}
 ---
 
-
 > Mommy! what is a file descriptor in Linux?
 
 # Challenge
@@ -65,4 +64,4 @@ Let's analyze the code in parts
 
 # Solution
 
-![[files/Pasted image 20251217120318.png]]
+![[Pasted image 20251217120318.png]]
