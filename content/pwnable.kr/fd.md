@@ -65,3 +65,8 @@ Let's analyze the code in parts
 # Solution
 
 ![[Pasted image 20251217120318.png]]
+
+
+
+
+
