@@ -7,4 +7,4 @@
 
 Hey there, this is Nayrae.
 I'm a red team enthusiast, my passions are PWN, maldev, network pentest, OSINT and literature.
-![[files/Pasted image 20251228131839.png]]
+![[Pasted image 20251228141822.png]]
