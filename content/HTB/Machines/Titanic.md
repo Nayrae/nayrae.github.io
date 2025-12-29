@@ -1,5 +1,5 @@
 ---
-publish: true
+publish: false
 tags:
   - HTB
   - Easy
@@ -14,6 +14,8 @@ After trying to reach the site we find the domain **titanic.htb** and set it in 
 after playing a bit with the main website we find that the **Book Now** option, once every camp is filled, gives us a json ticket with a get request, if we modify that  request we find it to be vulnerable to **path traversal**
 ![[Pasted image 20251228234958.png]]
 ![[Pasted image 20251228233918.png]]
+![[Pasted image 20251229140421.png]]
+
 But nothing else was found.
 However, we find the **dev** subdomain to use **Gitea** 
 ![[Pasted image 20251229000314.png]]
@@ -98,3 +100,6 @@ sqlite> select * from user;
 2|developer|developer||developer@titanic.htb|0|enabled|e53<SNIP>ef30bf1682619263444ea594cfb56|pbkdf2$50000$50|0|0|0||0|||0ce6f07fc9b557bc070fa7bef76a0d15|8bf3e3452b78544f8bee9400d6936d34|en-US||1722595646|1722603397|1722603397|0|-1|1|0|0|0|0|1|0|<SNIP>|developer@titanic.htb|0|0|0|0|2|0|0|0|0||gitea-auto|0
 sqlite> 
 ```
+
+
+![[Pasted image 20251229141536.png]]
