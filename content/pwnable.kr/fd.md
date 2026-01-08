@@ -5,6 +5,7 @@
 
 
 
+
 > Mommy! what is a file descriptor in Linux?
 
 # Challenge
@@ -14,7 +15,7 @@ After connecting to the machine with `ssh` and `ls`, we can see the 3 files of t
 - `fd.c`
 - `flag`
 To read the flag we must find a way to enter the if statement
-![[Pasted image 20251217103201.png]]
+![[files/Pasted image 20251217103201.png]]
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -67,4 +68,4 @@ Let's analyze the code in parts
 
 # Solution
 
-![[Pasted image 20251217120318.png]]
+![[files/Pasted image 20251217120318.png]]
