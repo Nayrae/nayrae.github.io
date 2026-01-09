@@ -4,9 +4,20 @@
 
 
 
+
 # Reconnaissance
 
-We're give the credentials `j.fleischman / J0elTHEM4n1990!`, however the first step is a nmap scan to see what services are enabled, and maybe we're able to find some other useful information
+  We're given the credentials `j.fleischman / J0elTHEM4n1990!`, however the first step is a nmap scan to see what services are enabled, and maybe we're able to find some other useful information
+
+
+
+
+
+
+# Reconnaissance
+
+We're given the credentials `j.fleischman / J0elTHEM4n1990!`, however the first step is a nmap scan to see what services are enabled, and maybe we're able to find some other useful information
+
 ![[files/Pasted image 20251216152400.png]]
 We're able to obtain lots of interesting informations: 
 - kerberos, ldap, smb (port 445), ldaps
