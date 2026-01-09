@@ -13,3 +13,5 @@ tags:
 ![[Pasted image 20260109231650.png]]
 If we intercept this request we're able to easily manipulate the parameters.
 ![[Pasted image 20260109231746.png]]
+We're able to look into the file system
+![[Pasted image 20260109232324.png]]
