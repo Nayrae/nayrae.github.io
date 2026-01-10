@@ -127,3 +127,6 @@ C:\Users>type sql_svc\Desktop\user.txt
 type sql_svc\Desktop\user.txt                                                            
 3e7b102e78218e935bf3f4951fec21a3         
 ```
+
+
+![[Pasted image 20260111003807.png]]
