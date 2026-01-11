@@ -187,7 +187,6 @@ C:\Users\Public>.\winPEASx64.exe
 ```
 
 ![[Pasted image 20260111003807.png]]
-
+![[Pasted image 20260111004945.png]]
 ![[Pasted image 20260111004852.png]]
 
-![[Pasted image 20260111004945.png]]
