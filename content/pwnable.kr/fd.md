@@ -7,6 +7,7 @@
 
 
 
+
 > Mommy! what is a file descriptor in Linux?
 
 # Challenge
